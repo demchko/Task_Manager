@@ -24,6 +24,10 @@
   color: white;
 }
 
+.h100{
+  height: calc(100vh - 50px);
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +39,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.header{
+  height: 50px;
+  background-color: #61dafb;
+  color: white;
 }

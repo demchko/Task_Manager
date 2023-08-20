@@ -1,0 +1,42 @@
+.modal{
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s all ease;
+}
+
+.modal.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modalContent{
+    display: block;
+    position: relative;
+    width: 0;
+    height: 100vh;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: white;
+    transform: translateX(-100%); /* Зсунемо вікно вліво за межі екрану */
+    transition: 0.5s all ease;
+}
+
+.modal.active .modalContent{
+    width: 40vw;
+    transform: translateX(0); /* Відсунемо вікно назад на видиму область */
+    transition: 0.5s all ease;
+}
+
+.title{
+    font-size: 120px;
+}
+
